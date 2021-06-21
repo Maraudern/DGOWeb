@@ -1,0 +1,354 @@
+/* indexStyle CSS Document */
+
+/* Body 
+------------------------------------- */
+@media (max-width: 999px){
+  #rotation .title h1{
+    display: none;
+  }
+}
+@media (max-width: 699px){
+  #features .boxContent{ 
+    flex-wrap: wrap;
+  }
+  #statis{ 
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 399px){
+  #video{ 
+    flex-wrap: wrap;
+  }
+}
+/*---------------------------------------
+
+
+
+
+
+  菜单
+-----------------------------------------*/
+.menuBg{
+  left: 0px;
+}
+/*---------------------------------------
+
+
+
+
+
+  全屏轮播
+-----------------------------------------*/
+#rotation{
+  position: relative;
+  width: 100%; height: 100%;
+}
+/* -- pics -- */
+#rotation #pics{
+  position: relative;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+#rotation #pics .picsItem{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; height: 100%;
+  background-size:cover;
+  background-position: center center;
+  transition: all 0s;
+  opacity: 0;
+  z-index: 0;
+}
+#rotation #pics .picsItem::before{
+  content:'';
+  position:absolute;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  background-color: rgb(0,0,0,.25);
+  z-index:-1;
+}
+#rotation #pics .pic1{
+  background-image: url(../images/index_rotation_pic1.jpg);
+}
+#rotation #pics .pic2{
+  background-image: url(../images/index_rotation_pic2.jpg);
+}
+#rotation #pics .pic3{
+  background-image: url(../images/index_rotation_pic3.jpg);
+}
+#rotation #pics .after{
+  opacity: 1;
+  z-index: 10;
+}
+#rotation #pics .before{
+  opacity: 1;
+  z-index: 11;
+}
+/* -- title -- */
+#rotation .title{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -100px);
+  width: 100%;
+  z-index: 1;
+}
+#rotation .title h1{
+  font-weight: 600;
+  text-shadow: 0 0 10px #000000;
+}
+#rotation .title h4{
+  font-weight: 600;
+  text-shadow: 0 0 5px #000000;
+}
+/* -- bottons -- */
+#rotation .buttons{
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, 100px);
+  z-index: 1;
+}
+/* -- btnNum -- */
+#rotation #btnNum{
+  position: absolute;
+  left: 50%; bottom: 20px;
+  transform: translate(-50%, 0);
+  width: 90px; height: 12px;
+  z-index: 1;
+}
+#rotation #btnNum .btnNumItem{
+  width: 24px; height: 10px;
+  margin: 0 3px;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  background-color: #006270;
+  cursor: pointer;
+  transition: all .2s;
+  transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+#rotation #btnNum .btnNumItem:hover{
+  background-color: #009394;
+  box-shadow: 0 0 5px #000000;
+}
+#rotation #btnNum .btnNumItemActive{
+  background-color: #009394;
+  box-shadow: 0 0 5px #000000;
+  transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+/* -- btnTab -- */
+#rotation .btnTab{
+  position: absolute;
+  top: 50%;
+  width: 50px; height: 50px;
+  cursor: pointer;
+  transition: all .3s;
+  opacity: 0.7;
+  z-index: 1;
+}
+#rotation .btnTab:hover{
+  opacity: 1;
+  box-shadow: 0 0 20px #333333;
+}
+#rotation .left{
+  left: 5px;
+  background-image: url(../images/icon/tabLeft.png);
+  background-size: cover;
+}
+#rotation .right{
+  right: 5px;
+  background-image: url(../images/icon/tabRight.png);
+  background-size: cover;
+}
+/*---------------------------------------
+
+
+
+
+
+  介绍
+-----------------------------------------*/
+#features{
+  position: relative;
+  width: 100%; height: 100%;
+}
+#features .boxContent{
+  padding: 0;
+}
+#features .boxContent .boxContentItem{
+  margin: 30px 0;
+  padding: 70px 0 0;
+  max-width: 390px; 
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center 3px;
+  transition: all .5s;
+  transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+}
+#features .boxContent .boxContentItem h3{
+  font-weight: 500;
+}
+#features .boxContent .boxContentItem h5{
+  line-height: 30px;
+  color: #CCCCCC;
+}
+#features .boxContent .icon1{
+  background-image: url(../images/icon/server.svg);
+}
+#features .boxContent .icon1:hover{
+  background-image: url(../images/icon/serverHover.svg);
+}
+#features .boxContent .icon2{
+  background-image: url(../images/icon/checkCircle.svg);
+}
+#features .boxContent .icon2:hover{
+  background-image: url(../images/icon/checkCircleHover.svg);
+}
+#features .boxContent .icon3{
+  background-image: url(../images/icon/cube.svg);
+}
+#features .boxContent .icon3:hover{
+  background-image: url(../images/icon/cubeHover.svg);
+}
+#features .boxContent .icon4{
+  background-image: url(../images/icon/bullhorn.svg);
+}
+#features .boxContent .icon4:hover{
+  background-image: url(../images/icon/bullhornHover.svg);
+}
+#features .boxContent .icon5{
+  background-image: url(../images/icon/balanceScale.svg);
+}
+#features .boxContent .icon5:hover{
+  background-image: url(../images/icon/balanceScaleHover.svg);
+}
+#features .boxContent .icon6{
+  background-image: url(../images/icon/donate.svg);
+}
+#features .boxContent .icon6:hover{
+  background-image: url(../images/icon/donateHover.svg);
+}
+/*---------------------------------------
+
+
+
+
+
+  统计 服务器信息
+-----------------------------------------*/
+#statis{
+  position: relative;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+#statis::before{
+  content:'';
+  position:absolute;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  background: url(../images/index_information_bg.jpg) repeat-y center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index:-1;
+}
+#statis .boxContent{
+  width: 100%; max-width: 260px;
+  transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+}
+#statis .boxContent h5{
+  display: block;
+  margin: 0 auto;
+  color: #dddddd;
+  font-weight: 600;
+}
+/*---------------------------------------
+
+
+
+
+
+  前言 服务器理念
+-----------------------------------------*/
+#notion{
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 1001;
+}
+#notion .boxContent{
+  
+}
+#notion h5{
+  line-height: 30px;
+  color: #CCCCCC;
+}
+/*---------------------------------------
+
+
+
+
+
+  视频 展示片
+-----------------------------------------*/
+#video{  
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  background-color: rgba(0,0,0,.4);
+}
+#video::before{
+  content:'';
+  position:absolute;
+  top:0; left:0;
+  width: 100%; height: 100%;
+  background: url(../images/index_video_bg.jpg) repeat-y center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index:-1;
+}
+#video .boxContent{
+  max-width: 390px;
+}
+#video .boxContent .icon-box{
+  display: block;
+  height: 64px;
+  width: 64px;
+  font-size: 64px;
+  background-image: url(../images/icon/playCircle.svg);
+  opacity: .5;
+  transition: all .5s;
+}
+#video .boxContent .icon-box:hover{
+  opacity: 1;
+}
+#video .boxContent h5{
+  display: block;
+  transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  font-weight: 600;
+  color: #CCCCCC;
+}
+/*---------------------------------------
+
+
+
+
+

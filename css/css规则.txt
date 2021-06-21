@@ -1,0 +1,92 @@
+1.定位
+position
+left top right bottom
+transform
+
+
+2.框架大小
+width height
+margin border padding
+border-radius
+background
+
+
+3.字体
+color
+font...
+font-size
+line-height
+text-align
+
+
+4.背景
+background
+opacity: /透明度
+
+
+最后
+transition
+cursor: pointer
+display
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+index
+
+
+
+颜色
+
+白色背景
+#333333黑
+#666666深灰
+#999999灰
+背景色#eeeeee
+分割线#5e5e5e
+
+
+CSS命名规范
+
+文件命名规范
+全局样式：global
+框架布局：layout
+字体样式：font
+链接样式：link
+打印样式：print
+
+常用类/ID命名规范
+页眉：header
+内容：content
+容器：contenter
+页脚：footer
+版权：copyright
+导航：menu
+主导航：mainMenu
+子导航：subMain
+标志：logo
+标语：banner
+标题：title
+侧边栏：sidebar
+图标：icon
+注释：note
+搜索：search
+按钮：btn
+登陆：login
+链接：link
+信息框：manage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
